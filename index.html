@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casas Bahi</title>
+    <title>Casas Bahia</title>
 </head>
+
 <body>
+
+    <style>
+        .footerService {
+            background-color: rgb(231, 231, 231);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px 15px;
+            text-align: center;
+        }
     
+        .footerService > div {
+            flex: 1;
+            min-width: 250px;
+            margin: 15px 0;
+            padding: 0 10px;
+        }
+    
+        .footerService h3 {
+            color: rgb(0, 51, 198);
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: clamp(16px, 2vw, 20px);
+        }
+    
+        .footerService span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: clamp(14px, 1.8vw, 18px);
+        }
+    
+        .footerService-shopping, 
+        .footerService-service {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .icon-right {
+            margin-left: 5px;
+        }
+    
+        @media (max-width: 768px) {
+            .footerService {
+                flex-direction: row;
+                padding: 20px 10px;
+            }
+            
+            .footerService > div {
+                margin: 10px 0;
+                padding: 10px 0;
+                border-bottom: 1px solid #ccc;
+                width: 100%;
+            }
+            
+            .footerService > div:last-child {
+                border-bottom: none;
+            }
+        }
+
+
+    
+    </style>
+    
+    <footer>
+        <div class="footerService">
+            <div class="footerService-shopping">
+                <h3>CENTRAL DE VENDAS</h3>
+                <div class="footerService-body">
+                    <span>Compre pelo Whatsapp
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" class="icon-right">
+                            <defs>
+                                <clipPath id="ic-whatsapp_svg__a">
+                                    <path data-name="Caminho 1188"
+                                        d="m0-.75 4.766-1.523a8.738 8.738 0 0 0 4.14 1.054A8.344 8.344 0 0 0 14.98-3.7a8.15 8.15 0 0 0 2.52-6.034 8.15 8.15 0 0 0-2.52-6.035 8.344 8.344 0 0 0-6.074-2.48 8.376 8.376 0 0 0-6.094 2.5 8.118 8.118 0 0 0-2.5 6.016A8.4 8.4 0 0 0 1.563-5.32zm8.906-1.719a7.429 7.429 0 0 1-3.555-.9L4.883-3.6l-.508.156-2.383.744.742-2.23.2-.547-.312-.508a7.036 7.036 0 0 1-1.055-3.75 6.987 6.987 0 0 1 2.148-5.117A7.248 7.248 0 0 1 8.906-17a7.248 7.248 0 0 1 5.2 2.148 6.987 6.987 0 0 1 2.144 5.118 7.032 7.032 0 0 1-2.15 5.156 7.229 7.229 0 0 1-5.194 2.109zm2.148-3.008q.586.078.625-.039a2.335 2.335 0 0 0 .859-.332 1.276 1.276 0 0 0 .625-.645q.313-.781.2-1.016a1.278 1.278 0 0 0-.43-.273q-.078-.039-.7-.391a7.689 7.689 0 0 0-.742-.391.414.414 0 0 0-.508.117q-.078.078-.371.41t-.371.41q-.156.2-.469.039a7.117 7.117 0 0 1-1.725-1.17 5.565 5.565 0 0 1-1.172-1.523.383.383 0 0 1 .117-.469l.352-.352a1.364 1.364 0 0 0 .234-.352.5.5 0 0 0 0-.391 2.108 2.108 0 0 0-.137-.352q-.137-.313-.273-.7t-.215-.586q-.156-.43-.508-.43h-.39a.821.821 0 0 0-.586.273 2.66 2.66 0 0 0-.859 1.8 3.529 3.529 0 0 0 .82 2.266l.117.156q.117.2.273.43t.391.547a5.867 5.867 0 0 0 .547.625q.313.312.645.625a4.7 4.7 0 0 0 .781.586 8.305 8.305 0 0 0 .879.469 9.452 9.452 0 0 0 1.992.659z"
+                                        transform="translate(0 18.25)" fill="#575757"></path>
+                                </clipPath>
+                            </defs>
+                            <g data-name="Grupo 1190" clip-path="url(#ic-whatsapp_svg__a)">
+                                <path data-name="Caminho 1187" d="M-5 22.5h27.5V-5H-5z" fill="#575757"></path>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="footerService-service">
+                <h3>CENTRAL DE ATENDIMENTO</h3>
+                <div>
+                    <span>4003-4336
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" class="icon-right">
+                            <defs>
+                                <clipPath id="ic-whatsapp_svg__a">
+                                    <path data-name="Caminho 1188"
+                                        d="m0-.75 4.766-1.523a8.738 8.738 0 0 0 4.14 1.054A8.344 8.344 0 0 0 14.98-3.7a8.15 8.15 0 0 0 2.52-6.034 8.15 8.15 0 0 0-2.52-6.035 8.344 8.344 0 0 0-6.074-2.48 8.376 8.376 0 0 0-6.094 2.5 8.118 8.118 0 0 0-2.5 6.016A8.4 8.4 0 0 0 1.563-5.32zm8.906-1.719a7.429 7.429 0 0 1-3.555-.9L4.883-3.6l-.508.156-2.383.744.742-2.23.2-.547-.312-.508a7.036 7.036 0 0 1-1.055-3.75 6.987 6.987 0 0 1 2.148-5.117A7.248 7.248 0 0 1 8.906-17a7.248 7.248 0 0 1 5.2 2.148 6.987 6.987 0 0 1 2.144 5.118 7.032 7.032 0 0 1-2.15 5.156 7.229 7.229 0 0 1-5.194 2.109zm2.148-3.008q.586.078.625-.039a2.335 2.335 0 0 0 .859-.332 1.276 1.276 0 0 0 .625-.645q.313-.781.2-1.016a1.278 1.278 0 0 0-.43-.273q-.078-.039-.7-.391a7.689 7.689 0 0 0-.742-.391.414.414 0 0 0-.508.117q-.078.078-.371.41t-.371.41q-.156.2-.469.039a7.117 7.117 0 0 1-1.725-1.17 5.565 5.565 0 0 1-1.172-1.523.383.383 0 0 1 .117-.469l.352-.352a1.364 1.364 0 0 0 .234-.352.5.5 0 0 0 0-.391 2.108 2.108 0 0 0-.137-.352q-.137-.313-.273-.7t-.215-.586q-.156-.43-.508-.43h-.39a.821.821 0 0 0-.586.273 2.66 2.66 0 0 0-.859 1.8 3.529 3.529 0 0 0 .82 2.266l.117.156q.117.2.273.43t.391.547a5.867 5.867 0 0 0 .547.625q.313.312.645.625a4.7 4.7 0 0 0 .781.586 8.305 8.305 0 0 0 .879.469 9.452 9.452 0 0 0 1.992.659z"
+                                        transform="translate(0 18.25)" fill="#575757"></path>
+                                </clipPath>
+                            </defs>
+                            <g data-name="Grupo 1190" clip-path="url(#ic-whatsapp_svg__a)">
+                                <path data-name="Caminho 1187" d="M-5 22.5h27.5V-5H-5z" fill="#575757"></path>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+    
+            <div>
+                <h3>PARA RJ E REGIÃO</h3>
+                <span>0800-200-4336</span>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
