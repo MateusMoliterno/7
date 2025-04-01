@@ -270,6 +270,205 @@ header {
     object-fit: cover;
 }
 
+.container {
+    
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    max-width: 400px;
+    color: #59687cda;
+}
+
+.product-features {
+    border-radius: 10px ;
+    padding: 16 16px 10px 16px;
+    background-color: #f7f7f7;
+    
+}
+
+.product-features .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.product-features h2 {
+    
+    font-size: 15px;
+    margin: 0;
+}
+
+.product-features a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.features-list p {
+    padding-bottom: 8px;
+    margin: 10px 0;
+    border-bottom: 1px solid #59687c50;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 11px;
+    color: #59687cc5;
+}
+
+.features-list .last-list {
+    border: none;
+}
+
+.features-list p strong {
+    font-size: 14px;
+    color: #59687c;
+
+}
+
+.pricing {
+    margin-top: 16px;
+    /* background-color: #fff; */
+}
+
+.old-price-box {
+    display: flex;
+    gap: 2vw;
+}
+
+.old-price-box .old-price {
+    color: gray;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.old-price-box .down{
+    background-color: #2c5c0a;
+    color: #fff;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.current-price {
+    color: #1d4ed8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.discount {
+    color: #16a34a;
+}
+
+.payment-options {
+    display: block;
+    color: #1d4ed8;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.buy-button {
+    width: 100%;
+    background-color: #1e730d;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.buy-button:hover {
+    background-color: #17580a;
+}
+
+.enterprise-box {
+    /* border: solid 1px pink; */
+    display: flex;
+    margin: 1.5vh 0 2vh 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.enterprise-box .svg {
+    width: 7vw;
+}
+
+.enterprise-box .enterprise-link {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: solid 1px;
+    padding-bottom: 2px;
+}
+
+.cep-info-box {
+    background-color:#e9f4ff ;
+    padding: 10px 10px 40px 10px;
+    border-radius: 8px;
+}
+
+
+
+.cep-info-box .rotule {
+    color: #0054cf;
+    font-weight: bold;
+
+
+}
+
+.cep-info-box .form-cep {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.cep-info-box .form-cep .input-cep {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #dededf;
+    border-right: none;
+    transition: 0.3s ease-in-out;
+}
+
+
+.cep-info-box .form-cep .cep-button {
+    
+    width: 15%;
+    font-size: 17px;
+    padding: 8px;
+    border: 1px solid #dededf;
+    border-left: none;
+    background-color: #faf6f6;
+    transition: 0.3s ease-in-out;
+}
+
+.cep-info-box .form-cep .input-cep:focus,
+.cep-info-box .form-cep .input-cep:focus + .cep-button {
+    border-color: #000000;
+    outline: none; 
+}
+
+.products-container {
+    margin-top: 7vh;
+
+}
+
+.products-container h3 {
+    color: #0033c6;
+    margin-left: 2vw;
+
+}
+
+.products-container p {
+    color: #59687c;
+    font-size: 14px;
+    margin: .6vh  0 6vh 10px ;
+    
+}
+
+
+
 @media (min-width: 768px) {
     .header-container {
         padding: 0 20px;
