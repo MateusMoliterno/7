@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    background-color: #f7f7f7;
+}
+
+.bg-1 {
+    background-color: #0033c6;
+    height: 8px;
+
+}
+
+.bg-2 {
+    background-color: #e71a3b;
+    height: 4px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon i {
+    font-size: 24px;
+    color: #0055aa;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logo .blue {
+    color: #0055aa;
+    font-weight: bold;
+}
+
+.logo .red {
+    color: #d40026;
+    font-weight: bold;
+}
+
+.icons i {
+    font-size: 22px;
+    margin-left: 15px;
+    color: #0055aa;
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 0 15px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    color: #0055aa;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.location i {
+    color: #0055aa;
+    margin-right: 5px;
+}
+
+.location span {
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        padding: 0 20px;
+    }
+
+    .search-bar {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .location {
+        justify-content: center;
+    }
+}
