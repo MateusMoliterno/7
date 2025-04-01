@@ -1,9 +1,9 @@
+
 const mainImage = document.getElementById('mainImage');
 const thumbnails = document.querySelectorAll('.thumbnail');
 
 let currentIndex = 0;
 let startX = 0;
-let currentX = 0;
 let isDragging = false;
 
 function updateMainImage(index) {
@@ -19,50 +19,62 @@ thumbnails.forEach((thumbnail, index) => {
   });
 });
 
-
+// Mouse events
 mainImage.addEventListener('mousedown', (e) => {
   isDragging = true;
   startX = e.clientX;
+  e.preventDefault(); // Prevenir seleção de texto durante arraste
 });
 
-window.addEventListener('mousemove', (e) => {
+mainImage.addEventListener('mousemove', (e) => {
   if (!isDragging) return;
-  currentX = e.clientX;
+  
+  const currentX = e.clientX;
+  const diff = startX - currentX; // Inverti a subtração para comportamento mais intuitivo
 
-  if (currentX - startX > 50) {
-    currentIndex = currentIndex > 0 ? currentIndex - 1 : thumbnails.length - 1;
-    updateMainImage(currentIndex);
-    isDragging = false;
-  }
-
-  if (currentX - startX < -50) {
-    currentIndex = currentIndex < thumbnails.length - 1 ? currentIndex + 1 : 0;
+  // Limiar maior para evitar navegações acidentais
+  if (Math.abs(diff) > 100) {
+    if (diff > 0) {
+        console.log('oie');
+        
+      // Arraste para a esquerda - próxima imagem
+      currentIndex = currentIndex < thumbnails.length - 1 ? currentIndex + 1 : 0;
+    } else {
+      // Arraste para a direita - imagem anterior
+      currentIndex = currentIndex > 0 ? currentIndex - 1 : thumbnails.length - 1;
+    }
     updateMainImage(currentIndex);
     isDragging = false;
   }
 });
 
-window.addEventListener('mouseup', () => {
+mainImage.addEventListener('mouseup', () => {
   isDragging = false;
 });
 
+mainImage.addEventListener('mouseleave', () => {
+  isDragging = false;
+});
+
+// Touch events
 mainImage.addEventListener('touchstart', (e) => {
   isDragging = true;
   startX = e.touches[0].clientX;
+  e.preventDefault(); // Prevenir scroll durante arraste
 });
 
 mainImage.addEventListener('touchmove', (e) => {
   if (!isDragging) return;
-  currentX = e.touches[0].clientX;
+  
+  const currentX = e.touches[0].clientX;
+  const diff = startX - currentX;
 
-  if (currentX - startX > 50) {
-    currentIndex = currentIndex > 0 ? currentIndex - 1 : thumbnails.length - 1;
-    updateMainImage(currentIndex);
-    isDragging = false;
-  }
-
-  if (currentX - startX < -50) {
-    currentIndex = currentIndex < thumbnails.length - 1 ? currentIndex + 1 : 0;
+  if (Math.abs(diff) > 100) {
+    if (diff > 0) {
+      currentIndex = currentIndex < thumbnails.length - 1 ? currentIndex + 1 : 0;
+    } else {
+      currentIndex = currentIndex > 0 ? currentIndex - 1 : thumbnails.length - 1;
+    }
     updateMainImage(currentIndex);
     isDragging = false;
   }

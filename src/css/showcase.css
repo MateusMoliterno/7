@@ -96,6 +96,7 @@ header {
 }
 
 .breadcrumb-container {
+    overflow: hidden;
     margin-top: 10px;
     font-size: 12px;
 
