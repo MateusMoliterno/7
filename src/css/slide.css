@@ -1,0 +1,111 @@
+.swiper-container {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fafafa;
+    border-radius: 10px;
+    border: solid 1px #c7c3c3;
+}
+
+.swiper-slide .img-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-box img {
+    width: 70%;
+    
+}
+
+.swiper-slide h4 {
+    display: -webkit-box; /* Para navegadores WebKit (Chrome, Safari) */
+    line-clamp: 2;
+    -webkit-line-clamp: 2; /* Número máximo de linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #414141;
+    text-overflow: ellipsis;
+    white-space: normal; /* Permite quebra de linha */
+    max-height: 3.6em; /* Ajuste conforme a altura da fonte (2 linhas) */
+    line-height: 1.2em; /* Altura da linha */
+}
+
+.swiper-button-next,.swiper-button-prev {
+    color: #0031c615 !important;   
+ 
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 2vh;
+}
+
+.rating .stars {
+    font-size: 20px;
+    color: #ce7317;
+}
+
+.rating-count {
+    margin-left: 7px;
+    font-size: 14px;
+    color: #666;
+}
+
+.price-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    max-width: 200px;
+    line-height: 1.4;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .current-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin: 5px 0;
+  }
+  
+  .installment-option {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  
+  .installment-text {
+    display: block;
+  }
+  
+  .discounted-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e53935;
+    margin: 8px 0;
+  }
+  
+  .payment-method {
+    font-size: 14px;
+  }
+  
+  .pix-text {
+    color: #34a853;
+    font-weight: bold;
+  }
+
+
