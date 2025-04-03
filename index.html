@@ -13,6 +13,11 @@
     <a href="/src/pages/showcase.html">anuncio</a>
 
     <style>
+        footer a {
+            text-decoration: none;
+            color: rgb(87, 87, 87);
+        }
+
         .footerService {
             background-color: rgb(231, 231, 231);
             display: flex;
@@ -22,61 +27,84 @@
             padding: 30px 15px;
             text-align: center;
         }
-    
-        .footerService > div {
+
+        .footerService>div {
             flex: 1;
             min-width: 250px;
             margin: 15px 0;
             padding: 0 10px;
         }
-    
+
         .footerService h3 {
             color: rgb(0, 51, 198);
             font-weight: 700;
             margin-bottom: 15px;
             font-size: clamp(16px, 2vw, 20px);
         }
-    
+
         .footerService span {
             display: inline-flex;
             align-items: center;
             gap: 5px;
             font-size: clamp(14px, 1.8vw, 18px);
         }
-    
-        .footerService-shopping, 
+
+        .footerService-shopping,
         .footerService-service {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-    
+
         .icon-right {
             margin-left: 5px;
         }
-    
+
+        .central {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px 0 15px;
+        }
+
+        .orders-body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .nav-casas-bahia-body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .nav-help-body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+
         @media (max-width: 768px) {
             .footerService {
                 flex-direction: row;
                 padding: 20px 10px;
             }
-            
-            .footerService > div {
+
+            .footerService>div {
                 margin: 10px 0;
                 padding: 10px 0;
                 border-bottom: 1px solid #ccc;
                 width: 100%;
             }
-            
-            .footerService > div:last-child {
+
+            .footerService>div:last-child {
                 border-bottom: none;
             }
         }
-
-
-    
     </style>
-    
+
     <footer>
         <div class="footerService">
             <div class="footerService-shopping">
@@ -98,7 +126,7 @@
                     </span>
                 </div>
             </div>
-    
+
             <div class="footerService-service">
                 <h3>CENTRAL DE ATENDIMENTO</h3>
                 <div>
@@ -118,12 +146,84 @@
                     </span>
                 </div>
             </div>
-    
+
             <div>
                 <h3>PARA RJ E REGIÃO</h3>
                 <span>0800-200-4336</span>
             </div>
         </div>
+
+
+        <div class="central">
+            <div class="orders">
+                <div class="orders-hearder">
+
+                    <h3>Meus Pedidos </h3>
+                </div>
+                <div class="orders-body">
+
+                    <a href="#">Acompanhe seus pedidos</a>
+                    <a href="#">Editar cadastro</a>
+                </div>
+            </div>
+            <div class="nav-casas-bahia">
+                <div class="nav-casas-bahia-header">
+                    <h3>Casas Bahia</h3>
+
+                    <div class="nav-casas-bahia-body">
+
+                        <div class="list"><a href="//www.viavarejo.com.br/nossa-historia" rel="noopener">Quem somos</a>
+                        </div>
+                        <div class="list"><a href="//www.casasbahia.com.br/servicos/home.aspx" rel="noopener">Serviços</a>
+                        </div>
+                        <div class="list"><a href="//listas.casasbahia.com.br/" rel="noopener">Lista de Presentes</a></div>
+                        <div class="list"><a href="//www.grupocasasbahia.com.br/vem-para-grupo-casas-bahia/"
+                                rel="noopener">Trabalhe conosco</a></div>
+                        <div class="list"><a href="//www.casasbahia.com.br/marketplace/venda-nas-casas-bahia.aspx"
+                                rel="noopener">Venda seus produtos</a></div>
+                        <div class="list"><a href="//www.casasbahia.com.br/black-friday" rel="noopener">Black Friday</a>
+                        </div>
+                        <div class="list"><a href="https://renegocie.casasbahia.com.br/desenrola-brasil/" target="_blank"
+                                rel="noopener">Desenrola Brasil</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-help">
+                <div class="nav-help-header">
+                    <h3>Ajuda</h3>
+                </div>
+                <div class="nav-help-body">
+
+                    <div class="list"><a href="//www.casasbahia.com.br/glossario/indice.aspx" rel="noopener">Mapa do
+                            Site</a>
+                    </div>
+                    <div class="list"><a href="https://app.octagora.com/s/cbsite" rel="noopener">Atendimento em
+                            libras</a></div>
+                    <div class="list"><a
+                            href="//ajuda.casasbahia.com.br/pergunta?n=175&amp;elementBefore=categorias&amp;elementBeforeDetails=Entregas"
+                            rel="noopener">Prazos e locais de entrega</a></div>
+                    <div class="list"><a
+                            href="//ajuda.casasbahia.com.br/categoria?nome=Trocas+e+devolu%C3%A7%C3%B5es&amp;pagina=1"
+                            rel="noopener">Política de Troca e Devolução</a></div>
+                    <div class="list"><a
+                            href="//ajuda.casasbahia.com.br/pergunta?n=236&amp;elementBefore=busca&amp;elementBeforeDetails=itens"
+                            rel="noopener">Quantidade de itens por pedido</a></div>
+                    <div class="list"><a href="//www.via.com.br/privacidade" target="_blank" rel="noopener">Portal de
+                            Privacidade</a></div>
+                    <div class="list"><a href="//www.casasbahia.com.br/l/politica-privacidade.aspx"
+                            rel="noopener">Política de
+                            Privacidade</a></div>
+                    <div class="list"><a
+                            href="//ajuda.casasbahia.com.br/pergunta?n=199&amp;elementBefore=busca&amp;elementBeforeDetails=termos"
+                            rel="noopener">Termos e Condições de Uso</a></div>
+                    <div class="list"><a href="https://grupocasasbahia.com.br/seguranca" rel="noopener">Segurança
+                            Digital</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </footer>
 </body>
 
