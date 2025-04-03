@@ -3,6 +3,7 @@
     height: max-content;
     position: relative;
     margin-bottom: 5vh;
+    overflow: hidden;
 }
 
 .swiper-slide {
