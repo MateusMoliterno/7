@@ -12,6 +12,12 @@
 
 @font-face {
     font-family: 'Nunito';
+    src: url('../../assets/fonts/Nunito/static/Nunito-Bold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Nunito';
     src: url('../../assets/fonts/Nunito/static/Nunito-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 700;
 }
