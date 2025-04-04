@@ -443,14 +443,23 @@ header {
 }
 
 .products-container {
-    margin-top: 7vh;
-    margin-left: 10px;
+    margin: 7vh 0 3vh 10px;
+
+}
+
+.products-container2 {
+    margin: 3vh 0 3vh 10px;
 
 }
 
 .products-container h3 {
     color: #0033c6;
-    margin-left: 2vw;
+    padding-left: 10px;
+}
+
+.products-container2 .text-slider2 {
+    margin-bottom: 2vh;
+    color: #0033c6;
 }
 
 
@@ -460,6 +469,14 @@ header {
     font-size: 14px;
     margin: .6vh  0 6vh 10px ;
     
+}
+
+.customer-reviews-container {
+    border: 1px solid blueviolet;
+    color: #0033c6;
+    margin: 6vh 0 6vh 0;
+    padding: 10px;
+    height: 250px;
 }
 
 @media (min-width: 768px) {
