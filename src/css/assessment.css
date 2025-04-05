@@ -1,0 +1,51 @@
+.assessment-container {
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+.rating {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stars {
+    color: #f39c12;
+    margin: 4px 0;
+}
+
+.recommendation {
+    margin: 16px 0;
+}
+
+.recommendation p {
+    margin: 4px 0;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: 24px;
+    color: #3498db;
+}
+
+.review {
+    margin: 12px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.review p {
+    margin: 4px 0;
+}
+
+.positive {
+    color: #27ae60;
+}
+
+.negative {
+    color: #e74c3c;
+}
